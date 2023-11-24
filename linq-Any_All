@@ -1,0 +1,27 @@
+1. Any
+
+用法：檢查Collection是否至少有一個元素符合指定條件
+
+遇到第一個滿足條件的元素，就會返回True，不再檢查搜索其他元素
+
+// 範例
+var nums = new[] { 5, 9, 2, 12, 6 };
+
+bool isAnyNumsLargerThan10 = nums.Any(num => num > 10);
+Console.WriteLine(isAnyNumsLargerThan10);
+
+Console.ReadKey();
+
+
+2. All
+
+用法：判斷每個元素全符合條件
+
+遇到第一個不滿足條件的元素，就會返回False，不再檢查搜索其他元素
+
+var nums = new[] { 5, 9, 2, 12, 6 };
+
+bool AllIsNumsLargerThanZero = nums.All(num => num > 0);
+Console.WriteLine(AllIsNumsLargerThanZero);
+
+Console.ReadKey();
